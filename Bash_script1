@@ -1,0 +1,13 @@
+#!/bin/bash
+# Get the maximum number from the existing files
+max_number=$(ls -l | grep -oP '(?<=Anthonette)\d+' | sort -n | tail -1)
+
+# Set the initial number for the new files
+number=$((max_number + 1))
+
+# Loop to create 25 empty files
+for ((i=0; i<25; i++)); do
+    filename="Anthonette$number"
+    touch "$filename"
+    number=$((number + 1))
+done
