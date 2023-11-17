@@ -23,6 +23,7 @@ Created an empty file using the touch command
 
 
 Script Creation: Utilized nano to write the script in a file named new_files.
+
 Saved with Control + O and exited to the console using Control + X.
 
 ![image](https://github.com/antznette/Bash-Scripting_challenge/assets/85882006/4c95a83d-00d9-406b-9cce-47156d4d62d0)
@@ -54,6 +55,7 @@ Developed an improved script (script2 in the repository) that addressed these ch
 Key Script Features:
 
 Octal Handling: Implemented a method to correctly interpret numbers with leading zeros as decimal.
+
 Serial File Creation: Ensured the script picks up the numbering correctly and maintains a sequential order.
 
 
