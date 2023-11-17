@@ -22,8 +22,7 @@ Directory Setup: Created a new directory named files and navigated into it.
 Script Creation: Utilized nano to write the script in a file named new_files.
 Saved with Control + O and exited to the console using Control + X.
 
-<img width="485" alt="nano_script1" src="https://github.com/antznette1/Bash_scripting_challenge/assets/106275232/1a95298a-2c8c-4b49-856c-c622d414f5f7">
-
+![image](https://github.com/antznette/Bash-Scripting_challenge/assets/85882006/4c95a83d-00d9-406b-9cce-47156d4d62d0)
 
 
  
