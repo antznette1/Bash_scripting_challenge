@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Initialize the starting file number
+next_file_number=1
+
+# Find the highest sequential file number among existing files
+for filename in Anthonette*; do
+  # Extract the numeric part from the filename
+  numeric_part=$(basename "$filename" | grep -oP '\d+')
+
+  # Check if the numeric part is a valid number
+  if [[ -z $numeric_part ]]; then
+    continue
+  fi
+
+  # Remove leading zeros and convert to decimal
+  numeric_part=$((10#$numeric_part))
+
+  # Update the next file number if the extracted number is higher
+  if ((numeric_part >= next_file_number)); then
+    next_file_number=$((numeric_part + 1))
+  fi
+done
+
+# Create the new files with sequential numbering
+for ((i = 0; i < 25; i++)); do
+  # Pad the file number with leading zeros
+  padded_file_number=$(printf "%03d" $next_file_number)
+
+  # Generate the filename with the padded number
+  filename="Anthonette$padded_file_number.txt"
+
+  # Create the empty file
+  touch "$filename"
+
+  # Increment the file number for the next file
+  next_file_number=$((next_file_number + 1))
+done
+
