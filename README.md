@@ -15,6 +15,8 @@ Development Environment
 Connection: Accessed my EC2 instance using PuTTY.
 
 Created a new directory named files and navigated into it.
+
+Created an empty file using the touch command
     
 
 ![image](https://github.com/antznette/Bash-Scripting_challenge/assets/85882006/19b74b63-99cc-4bcb-8e64-dec4f324a887)
